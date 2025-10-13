@@ -17,7 +17,7 @@ we have a dataset that will be imbalanced !
 - parameters : transaction frequency, time-based features, merchant risk profiling ??
 
 2) Handling class imbalance
-- SMOT strategy
+- SMOTE strategy
 - cost-sensitive learning where misclassifying fraud carries a higher penalty
 
 3) Modeling with ensemble learning
