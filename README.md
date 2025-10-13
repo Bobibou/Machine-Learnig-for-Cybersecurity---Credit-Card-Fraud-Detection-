@@ -4,7 +4,7 @@ Project for the class "Hands-on machine learning for cybersecurity". This projec
 Proposition 1 : Financial Fraud Detection with ensemble learning
 
 => problem statement : fraudulent financial transactions (ex: credit card fraud) 
-are much more difficult to detect than legimtimate transactions. So,
+are much more difficult to detect than legitimate transactions. So,
 we have a dataset that will be imbalanced !
 
 => objective : explore how ensemble learning methods can be applied
