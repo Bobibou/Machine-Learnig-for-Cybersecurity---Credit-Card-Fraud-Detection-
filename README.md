@@ -21,7 +21,7 @@ we have a dataset that will be imbalanced !
 - cost-sensitive learning where misclassifying fraud carries a higher penalty
 
 3) Modeling with ensemble learning
-- Random forest, Gradient boosting and XGBoost models
+- Random forest (good to solve overfitting), Gradient boosting and XGBoost models
 - compare performances
 
 4) Evaluation & interpretation
