@@ -2,10 +2,10 @@
 
 **Authors**
 
-• Dylan Sansas 
-• Maxime Thim-Siong
-• Fabien Leboucher
-• Mélissa Deffarges
+- Dylan Sansas 
+- Maxime Thim-Siong
+- Fabien Leboucher
+- Mélissa Deffarges
 
 
 
