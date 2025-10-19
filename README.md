@@ -290,7 +290,7 @@ The results are summarized below:
   </table>
 </div>
 
-
+Note that, due to time constraints and to the fact that we do not have access to NASA's pc, **LightGBM**'s and **XGBoost**'s were optimized with 50 iterations while **Random Forest** and **Gradient Boosting** were optimized with 15 iterations. However, this shows the efficiency of the optimization by optuna. 
 
  ## Comparative Analysis 
 
