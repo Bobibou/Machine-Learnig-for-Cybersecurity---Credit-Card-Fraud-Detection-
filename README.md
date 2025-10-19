@@ -8,11 +8,25 @@
 • Mélissa Deffarges
 
 
+
+----------
+
+
+
+
+
 ## Credit Card Detection - Project Overview
 
-Credit card fraud detection is one of the most important applications of machine learning in finance today. Every year, billions are lost to fraudulent transactions. Therefore, the financial institutions need increasingly better solutions to fight this threat. However, building an effective fraud detection system is a hard task due to the imbalance in datasets : fraudulent transactions are extremely rare compared to legitimates ones. In our dataset, only 0.6% of transactions are fraudulent, meaning that a model that predicts everything as legitimate would achieve 99.4% accuracy while being completely useless in reality. 
+Credit card fraud detection is one of the most important applications of machine learning in finance today. Every year, billions are lost to fraudulent transactions. Therefore, the financial institutions need increasingly better solutions to fight this threat. However, building an effective fraud detection system is a hard task due to the imbalance in datasets. Fraudulent transactions are extremely rare compared to legitimates ones. In our dataset, only 0.6% of transactions are fraudulent, meaning that a model that predicts everything as legitimate would achieve 99.4% accuracy while being completely useless in reality. 
 
 This project explores and compares four algorithms (Random Forest, LightGBM, XGBoost, and Gradient Boosting) for detecting fraudulent credit card transactions, evaluating their performance both with and without SMOTE.
+
+
+
+----------
+
+
+
 
 ## Dataset
 
@@ -27,6 +41,12 @@ The dataset contains real credit card transactions with both legitimate and frau
 This data reflects the pratical challenges of fraud detection because, not only is fraud very rare, but it's also difficult to distinguish from legitimate outliers like travel or large purchase
 
 
+
+----------
+
+
+
+
 ## Project Structure
 
 ```
@@ -34,6 +54,11 @@ This data reflects the pratical challenges of fraud detection because, not only 
 TO DO 
 
 ```
+
+
+----------
+
+
 
 ## Methodology 
 
@@ -127,6 +152,7 @@ $$
 • **ROC-AUC (Receiver Operating Characteristic - Area Under Curve)**: Shows the trade-off between true positive rate and false positive rate.
 
 
+----------
 
 
 ## Results 
@@ -142,9 +168,21 @@ TABLEAUX + GRAPH
 
 
 
+----------
+
+
+
+
 ## Usage
 
 To reproduce our results, run the **main.ipynb** notebook as it contains the complete pipeline: data loading, preprocessing, feature engienering, model training and evaluation.
+
+
+
+----------
+
+
+
 
 ## Requirements 
 
@@ -159,6 +197,15 @@ seaborn>=0.11.0
 imbalanced-learn>=0.8.0
 jupyter>=1.0.0
 ```
+
+
+
+
+----------
+
+
+
+
 
 ## References 
 
@@ -189,41 +236,3 @@ jupyter>=1.0.0
 
 
 
-
-
-
-
-
-
-
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Project for the class "Hands-on machine learning for cybersecurity". This project has for objective to create a machine learning model to detect credit card fraud and analyze the results.
-
-Proposition 1 : Financial Fraud Detection with ensemble learning
-
-=> problem statement : fraudulent financial transactions (ex: credit card fraud) 
-are much more difficult to detect than legitimate transactions. So,
-we have a dataset that will be imbalanced !
-
-=> objective : explore how ensemble learning methods can be applied
-(Random Forest, Gradient Boosting and XGBoost)
-
-=> Methodology :
-
-1) Dataset selection & preprocessing
-- publicly available dataset => Kaggle Credit Card Fraud Detection
-- parameters : transaction frequency, time-based features, merchant risk profiling ??
-
-2) Handling class imbalance
-- SMOT strategy
-- cost-sensitive learning where misclassifying fraud carries a higher penalty
-
-3) Modeling with ensemble learning
-- Random forest (good to solve overfitting, random selection for features), Gradient boosting and XGBoost models
-- compare performances between models
-
-4) Evaluation & interpretation
-- Evaluate using F1-score, Precision-recall AUC and ROC-AUC
-- analyze false positives and false negatives
-- SHAP values to understand model decisions
