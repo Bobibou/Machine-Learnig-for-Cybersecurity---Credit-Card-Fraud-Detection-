@@ -272,19 +272,19 @@ The results are summarized below:
       <tr>
         <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">Gradient Boosting</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">43.97%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">92.13%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">17.87%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">10.93%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">17.87%</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>34.87%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>95.07%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>53.32%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>59.89%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>48.05%</b></td>
       </tr>
     </tbody>
   </table>
