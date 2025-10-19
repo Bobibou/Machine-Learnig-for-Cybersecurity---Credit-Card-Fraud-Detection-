@@ -30,11 +30,11 @@ This project explores and compares four algorithms (Random Forest, LightGBM, XGB
 
 ## Dataset
 
-• **Source**: Kaggle Credit Card Fraud Detection Dataset
-• **Size**: 1.3 millions transactions (training) + 555 thousands transactions (testing)
-• **Features**: 73 (after the preprocessing)
-• **Class Distribution**: 99.4% is legitimate and 0.6% is fraudulent 
-• **Time Period**: January 2019 - June 2020
+- **Source**: Kaggle Credit Card Fraud Detection Dataset
+- **Size**: 1.3 millions transactions (training) + 555 thousands transactions (testing)
+- **Features**: 73 (after the preprocessing)
+- **Class Distribution**: 99.4% is legitimate and 0.6% is fraudulent 
+- **Time Period**: January 2019 - June 2020
 
 The dataset contains real credit card transactions with both legitimate and fraudulent cases. Each transaction includes information about the cardholder, merchant, transaction details, and location.
 
@@ -111,16 +111,16 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
 
 ### 3. The Four Models 
 
-• **Random Forest**: 
+- **Random Forest**: 
 
 
-• **Gradient Boosting**:  An ensemble model based on weak (shallow) decision trees combined sequentially, where each new tree is trained to correct the errors of the previous ones by following the gradient descent of a loss function.
+- **Gradient Boosting**:  An ensemble model based on weak (shallow) decision trees combined sequentially, where each new tree is trained to correct the errors of the previous ones by following the gradient descent of a loss function.
 
 
-• **XGBoost**:
+- **XGBoost**:
 
 
-• **LightGBM**: Microsoft's alternative to XGBoost. It uses histograms instead of exact values and grows trees leaf-wise instead of level-wise. It is significantly faster than XGBoost but is more prone to overfitting.
+- **LightGBM**: Microsoft's alternative to XGBoost. It uses histograms instead of exact values and grows trees leaf-wise instead of level-wise. It is significantly faster than XGBoost but is more prone to overfitting.
 
 $$
 \begin{array}{|c|c|c|c|}
@@ -141,15 +141,15 @@ $$
 
 ### 4. Evaluation Metrics
 
-• **Precision**: Shows how many transactions that were flagged as fraudulent actually were.
+- **Precision**: Shows how many transactions that were flagged as fraudulent actually were.
 
-• **Recall**: Shows the percentage of fraud the model caught.
+- **Recall**: Shows the percentage of fraud the model caught.
 
-• **F1-Score**: The mean of precision and recall. Important because it allows us to see if our model is ignore false positives or false negatives.
+- **F1-Score**: The mean of precision and recall. Important because it allows us to see if our model is ignore false positives or false negatives.
 
-• **PR-AUC (Precision-Recall - Area Under Curve)**: Shows the trade-off between precision and recall.
+- **PR-AUC (Precision-Recall - Area Under Curve)**: Shows the trade-off between precision and recall.
 
-• **ROC-AUC (Receiver Operating Characteristic - Area Under Curve)**: Shows the trade-off between true positive rate and false positive rate.
+- **ROC-AUC (Receiver Operating Characteristic - Area Under Curve)**: Shows the trade-off between true positive rate and false positive rate.
 
 
 ----------
@@ -209,15 +209,15 @@ jupyter>=1.0.0
 
 ## References 
 
-• Lucas, Y., & Jurgovsky, J. (2020). Credit card fraud detection using machine learning: A survey. arXiv preprint arXiv:2010.06479.
+- Lucas, Y., & Jurgovsky, J. (2020). Credit card fraud detection using machine learning: A survey. arXiv preprint arXiv:2010.06479.
 
-• Akiba, T., Sano, S., Yanase, T., Ohta, T., & Koyama, M. (2019). Optuna: A Next-Generation Hyperparameter Optimization Framework. arXiv preprint arXiv:1907.10902
+- Akiba, T., Sano, S., Yanase, T., Ohta, T., & Koyama, M. (2019). Optuna: A Next-Generation Hyperparameter Optimization Framework. arXiv preprint arXiv:1907.10902
 
-• Niu, X., Wang, L., & Yang, X. (2019). A Comparison Study of Credit Card Fraud Detection: Supervised versus Unsupervised. arXiv preprint arXiv:1904.10604
+- Niu, X., Wang, L., & Yang, X. (2019). A Comparison Study of Credit Card Fraud Detection: Supervised versus Unsupervised. arXiv preprint arXiv:1904.10604
 
-• Ghanem, M., Elkaffas, S. M., & Madbouly, M. Machine Learning Technique for Credit Card Fraud Detection
+- Ghanem, M., Elkaffas, S. M., & Madbouly, M. Machine Learning Technique for Credit Card Fraud Detection
 
-• Kochnev, R., Goodarzi, A. T., Bentyn, Z. A., Ignatov, D., & Timofte, R. (2025). Optuna vs Code Llama: Are LLMs a New Paradigm for Hyperparameter Tuning? arXiv preprint arXiv:2504.06006
+- Kochnev, R., Goodarzi, A. T., Bentyn, Z. A., Ignatov, D., & Timofte, R. (2025). Optuna vs Code Llama: Are LLMs a New Paradigm for Hyperparameter Tuning? arXiv preprint arXiv:2504.06006
 
 
 
