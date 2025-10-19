@@ -111,7 +111,7 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
 
 ### 3. The Four Models 
 
-- **Random Forest**: 
+- **Random Forest**: An ensemble model used for classification and regression. It builds multiple decision trees using random subsets of the training data and random subsets of features at each split. The final prediction is determined by majority vote for classification or by averaging for regression.
 
 
 - **Gradient Boosting**:  An ensemble model based on weak (shallow) decision trees combined sequentially, where each new tree is trained to correct the errors of the previous ones by following the gradient descent of a loss function.
