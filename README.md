@@ -184,13 +184,123 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
 
 ## Results 
 
-
+This section presents the performances of the four evaluated models, comparing their effectiveness with and without the use of SMOTE.
 
 ### Model Performance Comparison
 
+The models were trained with two methods : 
 
-TABLEAUX + GRAPH 
+    • With class weights by using the original dataset and adjusting model weights to penalize misclassification of the fraud class more heavily 
 
+    • With SMOTE by using a rebalanced dataset where synthetic fraud samples were generated via the SMOTE method.
+
+The results are summarized below : 
+
+<div style="display: flex; justify-content: center; width: 100%;">
+  <table style="border-collapse: collapse; width: 95%; text-align: center;">
+    <caption style="caption-side: top; font-weight: 600; padding: 4px 0; text-align: center;">
+      Model Performance on the Test Set
+    </caption>
+    <thead>
+      <tr>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Model</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Balancing Strategy</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">PR-AUC</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">ROC-AUC</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">F1-Score</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Recall</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Precision</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Random Forest -->
+      <tr>
+        <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">Random Forest</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+      </tr>
+      <!-- LightGBM -->
+      <tr>
+        <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">LightGBM</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+      </tr>
+      <!-- XGBoost -->
+      <tr>
+        <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">XGBoost</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+      </tr>
+      <!-- Gradient Boosting -->
+      <tr>
+        <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">Gradient Boosting</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Comparative Analysis
+
+- **XGBoost**
+
+- **LightGBM** offered the best trade-off between speed and accuracy, making it a strong candidate for real-time systems where fast predictions are essential.
+
+- **Random Forest**
+
+- **Gradient Boosting**
+
+
+### Visual Analysis
 
 
 
