@@ -117,7 +117,8 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
 - **Gradient Boosting**:  An ensemble model based on weak (shallow) decision trees combined sequentially, where each new tree is trained to correct the errors of the previous ones by following the gradient descent of a loss function.
 
 
-- **XGBoost**:
+- **XGBoost**: The XGBoost method is based on the construction of decision trees using the gradient boosting algorithm. The uniqueness of this algorithm lies in the structure of the decision trees employed. Trees whose branches produce inconsistent results are “pruned”; these are known as weak learners. Unlike Random Forest, XGBoost operates in a sequential manner. It utilizes multiple CPU cores so that learning can occur in parallel with training. XGBoost combines all the trees to enhance the accuracy of its predictions, making it particularly powerful for processing large volumes of data. Its strength lies in its bias reduction, achieved through the continuous improvement of parallel observations. Moreover, it requires no data preprocessing, as the algorithm directly includes built-in mechanisms to handle missing data, which greatly simplifies its implementation.
+
 
 
 - **LightGBM**: Microsoft's alternative to XGBoost. It uses histograms instead of exact values and grows trees leaf-wise instead of level-wise. It is significantly faster than XGBoost but is more prone to overfitting.
@@ -125,7 +126,7 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
 <div style="display: flex; justify-content: center; width: 100%;">
   <table style="border-collapse: collapse; width: 80%; text-align: center;">
     <caption style="caption-side: top; font-weight: 600; padding: 4px 0; text-align: center;">
-      Models and their characteristics 
+                            Models and their characteristics 
     </caption>
     <thead>
       <tr>
@@ -188,13 +189,13 @@ This section presents the performances of the four evaluated models, comparing t
 
 ### Model Performance Comparison
 
-The models were trained with two methods : 
+The models were trained with two methods:  
 
-    • With class weights by using the original dataset and adjusting model weights to penalize misclassification of the fraud class more heavily 
+    • With class weights by using the original dataset and adjusting model weights to penalize misclassification of the fraud class more heavily.
 
-    • With SMOTE by using a rebalanced dataset where synthetic fraud samples were generated via the SMOTE method.
+    • With SMOTE by using a rebalanced dataset where synthetic fraud sample were generated via the SMOTE method.
 
-The results are summarized below : 
+The results are summarized below:
 
 <div style="display: flex; justify-content: center; width: 100%;">
   <table style="border-collapse: collapse; width: 95%; text-align: center;">
@@ -289,18 +290,20 @@ The results are summarized below :
   </table>
 </div>
 
-### Comparative Analysis
-
-- **XGBoost**
-
-- **LightGBM** offered the best trade-off between speed and accuracy, making it a strong candidate for real-time systems where fast predictions are essential.
-
-- **Random Forest**
-
-- **Gradient Boosting**
 
 
-### Visual Analysis
+ ## Comparative Analysis 
+
+ - **XGBoost** 
+
+ - **LightGBM** offered the best trade-off between speed and accuracy, making it a strong candidate for real-time systems where fast perdictions are essentials.
+
+ - **Random Forest**
+
+ - **Gradient Boosting**
+
+
+ ## Visual Analysis 
 
 
 
