@@ -122,45 +122,47 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
 
 - **LightGBM**: Microsoft's alternative to XGBoost. It uses histograms instead of exact values and grows trees leaf-wise instead of level-wise. It is significantly faster than XGBoost but is more prone to overfitting.
 
-<table style="border-collapse: collapse; width: 100%; max-width: 900px;">
-  <caption style="caption-side: top; text-align: left; font-weight: 600; padding: 4px 0;">
-    Modèles et temps d'entraînement
-  </caption>
-  <thead>
-    <tr>
-      <th style="border: 1px solid #d0d7de; padding: 8px; text-align: left;">Model</th>
-      <th style="border: 1px solid #d0d7de; padding: 8px; text-align: left;">Algorithm</th>
-      <th style="border: 1px solid #d0d7de; padding: 8px; text-align: left;">Key Strength</th>
-      <th style="border: 1px solid #d0d7de; padding: 8px; text-align: left;">Training Time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Random Forest</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Parallel</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Stability, interpretability</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">2–3 min</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">LightGBM</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Speed, memory efficiency</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">30–45 s</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">XGBoost</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Accuracy, robustness</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">3–5 min</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Gradient Boosting</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">Stability, simplicity</td>
-      <td style="border: 1px solid #e6edf3; padding: 8px;">2–3 min</td>
-    </tr>
-  </tbody>
-</table>
+<div style="display: flex; justify-content: center; width: 100%;">
+  <table style="border-collapse: collapse; width: 80%; text-align: center;">
+    <caption style="caption-side: top; font-weight: 600; padding: 4px 0; text-align: center;">
+      Models and their characteristics 
+    </caption>
+    <thead>
+      <tr>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Model</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Algorithm</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Key Strength</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Training Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Random Forest</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Parallel</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Stability, interpretability</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">2–3 min</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">LightGBM</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Speed, memory efficiency</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">30–45 s</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">XGBoost</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Accuracy, robustness</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">3–5 min</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Gradient Boosting</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">Stability, simplicity</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">2–3 min</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 
 
