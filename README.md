@@ -218,37 +218,37 @@ The results are summarized below:
       <tr>
         <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">Random Forest</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">31.99%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">95.09%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">27.24%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">75.02%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">16.64%</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>31.82%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>93.78%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>28.96%%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>74.68%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>17.96%</b></td>
       </tr>
       <!-- LightGBM -->
       <tr>
         <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">LightGBM</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">[value]%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">97.28%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">99.93%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">94.54%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">92.87%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">96.27%</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>[value]%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>97.59%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>99.96%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>94.33%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>90.41%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>98.62%</b></td>
       </tr>
       <!-- XGBoost -->
       <tr>
