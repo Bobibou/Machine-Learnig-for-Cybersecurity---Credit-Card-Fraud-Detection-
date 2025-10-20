@@ -59,6 +59,28 @@ TO DO
 ----------
 
 
+## Requirements 
+
+```
+pandas>=1.3.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+lightgbm>=3.3.0
+xgboost>=1.5.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+imbalanced-learn>=0.8.0
+jupyter>=1.0.0
+```
+
+
+
+----------
+
+
+
+
+
 
 ## Methodology 
 
@@ -324,19 +346,7 @@ To reproduce our results, run the **main.ipynb** notebook as it contains the com
 
 
 
-## Requirements 
 
-```
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-lightgbm>=3.3.0
-xgboost>=1.5.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
-imbalanced-learn>=0.8.0
-jupyter>=1.0.0
-```
 
 
 
