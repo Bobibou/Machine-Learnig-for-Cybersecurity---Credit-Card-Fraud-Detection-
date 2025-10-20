@@ -40,8 +40,12 @@ The dataset contains real credit card transactions with both legitimate and frau
 
 This data reflects the pratical challenges of fraud detection because, not only is fraud very rare, but it's also difficult to distinguish from legitimate outliers like travel or large purchases.
 
+We can visualize how the dataset is balanced in the following histogram : 
 
-![Class Imbalance Representation](Visualization/class_imbalance.png)
+<p align="center">
+  <img src="Visualization/class_imbalance.png" alt="Dataset Imbalance Representation" width="1080">
+</p>
+
 
 
 
@@ -158,7 +162,7 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
         <th style="border: 1px solid #d0d7de; padding: 8px;">Model</th>
         <th style="border: 1px solid #d0d7de; padding: 8px;">Algorithm</th>
         <th style="border: 1px solid #d0d7de; padding: 8px;">Key Strength</th>
-        <th style="border: 1px solid #d0d7de; padding: 8px;">Training Time</th>
+        <th style="border: 1px solid #d0d7de; padding: 8px;">Temporal Complexity</th>
       </tr>
     </thead>
     <tbody>
@@ -166,31 +170,46 @@ This generates about 300 000 synthetic fraud examples, giving the model more fra
         <td style="border: 1px solid #e6edf3; padding: 8px;">Random Forest</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Parallel</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Stability, interpretability</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">2–3 min</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">O(M⋅n⋅p⋅d)</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;">LightGBM</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Speed, memory efficiency</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">30–45 s</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">O(M⋅(neff​⋅peff​+b⋅peff​⋅d))</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;">XGBoost</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Accuracy, robustness</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">3–5 min</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">O(M⋅(n⋅p+b⋅p⋅d))
+</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Gradient Boosting</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Sequential</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Stability, simplicity</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">2–3 min</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">O(M⋅n⋅p⋅d)
+</td>
       </tr>
     </tbody>
   </table>
 </div>
 
+With: 
 
+    • n – number of samples (rows in the dataset)
+
+    • p – number of features (columns)
+
+    • M – number of trees in the ensemble
+
+    • d – average or maximum depth of the trees
+
+    • b – number of bins (for histograms, in XGBoost/LightGBM
+
+
+    
 
 ### 4. Evaluation Metrics
 
@@ -340,23 +359,10 @@ Note that, due to time constraints and to the fact that we do not have access to
 
 ## Usage
 
-To reproduce our results, run the **main.ipynb** notebook as it contains the complete pipeline: data loading, preprocessing, feature engienering, model training and evaluation.
-
-
-
-----------
-
-
-
-
-
-
-
+To reproduce our results, run the **main.ipynb** notebook as it contains the complete pipeline: data loading, preprocessing, feature engienering, model training and evaluation. However, this might take long so if you want the results of only one models, you can simply run the notebook of the model. 
 
 
 ----------
-
-
 
 
 
