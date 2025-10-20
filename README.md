@@ -38,7 +38,10 @@ This project explores and compares four algorithms (Random Forest, LightGBM, XGB
 
 The dataset contains real credit card transactions with both legitimate and fraudulent cases. Each transaction includes information about the cardholder, merchant, transaction details, and location.
 
-This data reflects the pratical challenges of fraud detection because, not only is fraud very rare, but it's also difficult to distinguish from legitimate outliers like travel or large purchase
+This data reflects the pratical challenges of fraud detection because, not only is fraud very rare, but it's also difficult to distinguish from legitimate outliers like travel or large purchases.
+
+
+![Class Imbalance Representation](Visualization/class_imbalance.png)
 
 
 
