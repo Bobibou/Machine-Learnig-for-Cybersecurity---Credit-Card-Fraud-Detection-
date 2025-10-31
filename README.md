@@ -61,17 +61,15 @@ Machine-Learning-for-Cybersecurity---Credit-Card-Fraud-Detection-/
 ├── Visualization/                                       
 │   ├── class_imbalance.png
 │   └── geographic_distance_analysis.png
+│   ├── geographic_distance_analysis.png
+│   ├── job_target_encoding_visualization.png
 │
 ├── notebooks/                                           
 │   ├── GradientBooting.ipynb                             # Gradient Boosting Classifier algorithm
 │   ├── LightGBM.ipynb                                    # Light GBM Classifier algorithm
 │   ├── RandomForest.ipynb                                # Random Forest Classifier algorithm
 │   ├── XGBoost.ipynb                                     # XGBoost Classfier algorithm
-│   ├── category_target_encoding_visualization.png
-│   ├── class_imbalance.png
 │   ├── eda_analysis.ipynb                                # Analysis program
-│   ├── geographic_distance_analysis.png
-│   ├── job_target_encoding_visualization.png
 │   ├── preprocessing_loader_v2.ipynb                     # Preprocessing program
 │
 ├── main.ipynb                                            # Main program notebook
