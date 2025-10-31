@@ -71,8 +71,7 @@ Machine-Learning-for-Cybersecurity---Credit-Card-Fraud-Detection-/
 │   ├── XGBoost.ipynb                                     # XGBoost Classfier algorithm
 │   ├── eda_analysis.ipynb                                # Analysis program
 │   └── preprocessing_loader_v2.ipynb                     # Preprocessing program
-│
-├── main.ipynb                                            # Main program notebook
+│                                           
 │
 ├── LICENSE                  
 └── README.md                                             # Main project documentation
@@ -374,7 +373,7 @@ Note that, due to time constraints and to the fact that we do not have access to
 
 ## Usage
 
-To reproduce our results, run the **main.ipynb** notebook as it contains the complete pipeline: data loading, preprocessing, feature engienering, model training and evaluation. However, this might take long so if you want the results of only one models, you can simply run the notebook of the model. 
+Each model is contained in its own notebook. To reproduce our results, run the notebook of the model you are interested in independently. 
 
 
 ----------
