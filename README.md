@@ -1,4 +1,4 @@
-# Machine-Learnig-for-Cybersecurity---Credit-Card-Fraud-Detection-
+# Machine-Learning-for-Cybersecurity---Credit-Card-Fraud-Detection-
 
 **Authors**
 
@@ -56,11 +56,28 @@ We can visualize how the dataset is balanced in the following histogram :
 
 ## Project Structure
 
-```
-
-TO DO 
-
-```
+Machine-Learning-for-Cybersecurity---Credit-Card-Fraud-Detection-/
+│
+├── Visualization/                                       
+│   ├── class_imbalance.png
+│   └── geographic_distance_analysis.png
+│
+├── notebooks/                                           
+│   ├── GradientBooting.ipynb                             # Gradient Boosting Classifier algorithm
+│   ├── LightGBM.ipynb                                    # Light GBM Classifier algorithm
+│   ├── RandomForest.ipynb                                # Random Forest Classifier algorithm
+│   ├── XGBoost.ipynb                                     # XGBoost Classfier algorithm
+│   ├── category_target_encoding_visualization.png
+│   ├── class_imbalance.png
+│   ├── eda_analysis.ipynb                                # Analysis program
+│   ├── geographic_distance_analysis.png
+│   ├── job_target_encoding_visualization.png
+│   ├── preprocessing_loader_v2.ipynb                     # Preprocessing program
+│
+├── main.ipynb                                            # Main program notebook
+│
+├── LICENSE                  
+└── README.md                                             # Main project documentation
 
 
 ----------
