@@ -4,7 +4,7 @@
 
 - Dylan Sansas 
 - Maxime Thim-Siong
-- Fabien Leboucher
+- Fabio Leboucher
 - Mélissa Deffarges
 
 
