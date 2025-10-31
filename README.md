@@ -276,19 +276,19 @@ The results are summarized below:
       <tr>
         <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">Random Forest</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">31.99%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">95.09%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">27.24%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">75.02%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">16.64%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">67.61%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">97.60%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">29.31%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">85.74%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">17.68%</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>31.82%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>93.78%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>28.96%%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>74.68%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>17.96%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>63.36%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>96.77%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>24.99%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>82.81%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>14.72%</b></td>
       </tr>
       <!-- LightGBM -->
       <tr>
@@ -330,19 +330,19 @@ The results are summarized below:
       <tr>
         <td rowspan="2" style="border: 1px solid #e6edf3; padding: 8px; vertical-align: middle;">Gradient Boosting</td>
         <td style="border: 1px solid #e6edf3; padding: 8px;">Class Weights</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">43.97%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">92.13%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">17.87%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">10.93%</td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;">17.87%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">55.89%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">97.04%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">55.66%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">43.10%</td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;">78.52%</td>
       </tr>
       <tr>
         <td style="border: 1px solid #e6edf3; padding: 8px;"><b>SMOTE</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>34.87%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>95.07%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>53.32%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>59.89%</b></td>
-        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>48.05%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>65.87%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>98.19%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>43.98%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>79.95%</b></td>
+        <td style="border: 1px solid #e6edf3; padding: 8px;"><b>30.33%</b></td>
       </tr>
     </tbody>
   </table>
@@ -352,16 +352,13 @@ Note that, due to time constraints and to the fact that we do not have access to
 
  ## Comparative Analysis 
 
- - **XGBoost** 
+ - **XGBoost** achieved consistently strong results across both balancing strategies, maintaining high ROC-AUC and PR-AUC values. Its performance remains robust even without SMOTE, thanks to the use of scale_pos_weight, which effectively compensates for class imbalance
 
- - **LightGBM** offered the best trade-off between speed and accuracy, making it a strong candidate for real-time systems where fast perdictions are essentials.
+ - **LightGBM** delivered the best overall performance, combining excellent accuracy with fast training times. Its balance between precision and recall makes it ideal for real-time fraud detection systems where rapid predictions are essential.
 
- - **Random Forest**
+ - **Random Forest** showed the weakest performance among the models. Although SMOTE slightly improved recall, it also introduced overfitting risks, confirming that Random Forests are less suited for highly imbalanced datasets.
 
- - **Gradient Boosting**
-
-
- ## Visual Analysis 
+ - **Gradient Boosting** produced acceptable results but is far behind XGBoost and LightGBM. It benefited from SMOTE, indicating that it relies more on balanced data to perform effectively.
 
 
 
