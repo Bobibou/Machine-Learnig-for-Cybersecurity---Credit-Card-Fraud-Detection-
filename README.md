@@ -55,7 +55,7 @@ We can visualize how the dataset is balanced in the following histogram :
 
 
 ## Project Structure
-
+```
 Machine-Learning-for-Cybersecurity---Credit-Card-Fraud-Detection-/
 │
 ├── Visualization/                                       
@@ -78,7 +78,7 @@ Machine-Learning-for-Cybersecurity---Credit-Card-Fraud-Detection-/
 │
 ├── LICENSE                  
 └── README.md                                             # Main project documentation
-
+```
 
 ----------
 
